@@ -13,7 +13,7 @@ There are uninstall instructions in the repository: <https://github.com/m0nad/Di
 ### Further Analysis
 
 Next, I opened a connection on the HTB machine using netcat.  
-![Netcat session opening connection](nc.png)
+![Netcat session opening connection](nc.png)<br>
 According to the GitHub uninstall guide, the module starts invisible — we need to run `kill -63 0` to make it visible.  
 ![Kernel panic after visibility toggle](panic.png)
 
