@@ -22,6 +22,7 @@ Upon opening the file in Ghidra, we can see a bunch of strings being pushed to t
 ![alt text](stack-string.png)
 
 It looks like it is forming this string here.
+<br>
 ![alt text](string.png)
 
 Yep, that is the correct flag.
