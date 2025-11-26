@@ -9,15 +9,16 @@ Based on the method name, we infer it’s Diamorphine, a known Linux rootkit.
 ![Diamorphine reference screenshot](diamorphine.png)
 
 There are uninstall instructions in the repository: <https://github.com/m0nad/Diamorphine>, which we will follow.  
-![Netcat session opening connection](nc.png)
 
 ### Further Analysis
 
 Next, I opened a connection on the HTB machine using netcat.  
+![Netcat session opening connection](nc.png)
 According to the GitHub uninstall guide, the module starts invisible — we need to run `kill -63 0` to make it visible.  
 ![Kernel panic after visibility toggle](panic.png)
 
 That command caused a kernel panic.  
+
 Using Binary Ninja we observed that some `cmp` instructions point to altered values.  
 ![Modified cmp instruction at 0x2e](0x2e.png)
 
