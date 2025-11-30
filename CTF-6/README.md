@@ -17,6 +17,7 @@ It looks like it's using the `strlen` and `strncmp` libraries.
 ### Ghidra
 
 ![alt text](assembly.png)
+<br>
 In the disassembled code we can see `strncmp` being called several times. This is where the program is checking the password. It cycles through this multiple times to check the characters in the given password.
 <br>
 
